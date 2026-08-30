@@ -1,0 +1,517 @@
+﻿@import "tailwindcss";
+
+/* =========================================================
+   NEON DARK THEME
+   ========================================================= */
+
+:root {
+  --bg-main: #050708;
+  --bg-panel: #0a0f12;
+  --bg-card: #0d1418;
+  --border-dark: #1b292f;
+
+  --green: #00ff9c;
+  --green-soft: rgba(0, 255, 156, 0.18);
+
+  --purple: #a855f7;
+  --purple-soft: rgba(168, 85, 247, 0.18);
+
+  --blue: #168cff;
+  --blue-soft: rgba(22, 140, 255, 0.18);
+
+  --text-main: #f8fafc;
+  --text-soft: #a8b3bd;
+}
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(0, 255, 156, 0.07),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(22, 140, 255, 0.07),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 90%,
+      rgba(168, 85, 247, 0.05),
+      transparent 30%
+    ),
+    var(--bg-main);
+
+  color: var(--text-main);
+}
+
+/* =========================================================
+   BACKGROUND UTAMA
+   ========================================================= */
+
+.min-h-screen {
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(0, 255, 156, 0.04),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 30%,
+      rgba(22, 140, 255, 0.04),
+      transparent 25%
+    ),
+    var(--bg-main) !important;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+  background:
+    radial-gradient(
+      circle at 15% 50%,
+      rgba(0, 255, 156, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(0, 150, 255, 0.10),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #06110e,
+      #071418,
+      #05090c
+    ) !important;
+
+  border-bottom: 1px solid rgba(0, 255, 156, 0.18);
+
+  box-shadow:
+    0 15px 50px rgba(0, 0, 0, 0.55),
+    0 0 45px rgba(0, 255, 156, 0.08);
+}
+
+/* =========================================================
+   JAM / WAKTU DI HEADER
+   ========================================================= */
+
+header .bg-white\/10 {
+  background: rgba(0, 255, 156, 0.06) !important;
+
+  border: 1px solid rgba(0, 255, 156, 0.35) !important;
+
+  box-shadow:
+    0 0 20px rgba(0, 255, 156, 0.10),
+    inset 0 0 20px rgba(0, 255, 156, 0.04);
+}
+
+header .bg-emerald-500\/30 {
+  background: rgba(0, 255, 156, 0.12) !important;
+
+  box-shadow:
+    0 0 20px rgba(0, 255, 156, 0.18);
+}
+
+/* =========================================================
+   SEMUA PANEL UTAMA
+   ========================================================= */
+
+main .bg-white,
+main .bg-slate-50,
+main .bg-slate-100 {
+  background: var(--bg-panel) !important;
+
+  color: var(--text-main);
+}
+
+/* =========================================================
+   STATUS REAL-TIME
+   HIJAU NEON
+   ========================================================= */
+
+main section[class*="border-emerald"] {
+  background:
+    radial-gradient(
+      circle at 0% 50%,
+      rgba(0, 255, 156, 0.12),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #07140f,
+      #091613
+    ) !important;
+
+  border-color: rgba(0, 255, 156, 0.65) !important;
+
+  box-shadow:
+    0 0 15px rgba(0, 255, 156, 0.18),
+    0 0 45px rgba(0, 255, 156, 0.10),
+    inset 0 0 30px rgba(0, 255, 156, 0.035);
+}
+
+/* =========================================================
+   PRAKTIKUM
+   UNGU NEON
+   ========================================================= */
+
+main section[class*="border-indigo"] {
+  background:
+    radial-gradient(
+      circle at 0% 50%,
+      rgba(168, 85, 247, 0.14),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #10091a,
+      #0c0b15
+    ) !important;
+
+  border-color: rgba(168, 85, 247, 0.70) !important;
+
+  box-shadow:
+    0 0 15px rgba(168, 85, 247, 0.20),
+    0 0 45px rgba(168, 85, 247, 0.10),
+    inset 0 0 30px rgba(168, 85, 247, 0.04);
+}
+
+/* =========================================================
+   MATA KULIAH BERIKUTNYA
+   BIRU NEON
+   ========================================================= */
+
+main section[class*="border-blue"] {
+  background:
+    radial-gradient(
+      circle at 0% 50%,
+      rgba(22, 140, 255, 0.14),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #07121f,
+      #090e16
+    ) !important;
+
+  border-color: rgba(22, 140, 255, 0.70) !important;
+
+  box-shadow:
+    0 0 15px rgba(22, 140, 255, 0.20),
+    0 0 45px rgba(22, 140, 255, 0.10),
+    inset 0 0 30px rgba(22, 140, 255, 0.04);
+}
+
+/* =========================================================
+   JADWAL UTAMA
+   ========================================================= */
+
+main > .space-y-6 > div {
+  background:
+    linear-gradient(
+      135deg,
+      #080d10,
+      #0b1115
+    ) !important;
+
+  border-color: #1b292f !important;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.45),
+    0 0 20px rgba(0, 255, 156, 0.025);
+}
+
+/* Header hari */
+main .bg-slate-50\/80 {
+  background:
+    linear-gradient(
+      135deg,
+      #0d1519,
+      #0a1013
+    ) !important;
+
+  border-color: #1b292f !important;
+}
+
+/* =========================================================
+   ITEM JADWAL
+   ========================================================= */
+
+main .divide-y > div {
+  background: #090f13 !important;
+
+  border-color: #1b292f !important;
+}
+
+/* Hover item jadwal */
+main .divide-y > div:hover {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 255, 156, 0.045),
+      rgba(22, 140, 255, 0.025),
+      transparent
+    ) !important;
+
+  box-shadow:
+    inset 4px 0 0 rgba(0, 255, 156, 0.45);
+}
+
+/* =========================================================
+   KARTU WAKTU
+   ========================================================= */
+
+main .bg-slate-100 {
+  background:
+    linear-gradient(
+      135deg,
+      #0d171c,
+      #0a1014
+    ) !important;
+
+  border-color: #263941 !important;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.40),
+    0 0 15px rgba(0, 255, 156, 0.05);
+}
+
+/* =========================================================
+   TEKS
+   ========================================================= */
+
+main .text-slate-900,
+main .text-slate-800 {
+  color: #f8fafc !important;
+}
+
+main .text-slate-700 {
+  color: #d6dee4 !important;
+}
+
+main .text-slate-600,
+main .text-slate-500 {
+  color: #9aa8b2 !important;
+}
+
+main .text-slate-400 {
+  color: #7d8b95 !important;
+}
+
+/* =========================================================
+   TAB HARI
+   ========================================================= */
+
+main .bg-slate-200\/70 {
+  background: #080d10 !important;
+
+  border-color: #1b292f !important;
+
+  box-shadow:
+    inset 0 0 15px rgba(0, 0, 0, 0.35),
+    0 0 15px rgba(0, 255, 156, 0.04);
+}
+
+/* Tab aktif */
+main button.bg-white {
+  background:
+    rgba(0, 255, 156, 0.10) !important;
+
+  color: #00ff9c !important;
+
+  border: 1px solid rgba(0, 255, 156, 0.35);
+
+  box-shadow:
+    0 0 15px rgba(0, 255, 156, 0.12);
+}
+
+/* Tab biasa */
+main .text-slate-600 {
+  color: #8e9ca6 !important;
+}
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+main input,
+main select {
+  background: #090f13 !important;
+
+  color: #e5edf2 !important;
+
+  border-color: #263941 !important;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.30);
+}
+
+main input::placeholder {
+  color: #65737c !important;
+}
+
+main input:focus,
+main select:focus {
+  border-color: rgba(0, 255, 156, 0.55) !important;
+
+  box-shadow:
+    0 0 0 2px rgba(0, 255, 156, 0.08),
+    0 0 20px rgba(0, 255, 156, 0.10) !important;
+}
+
+/* =========================================================
+   BADGE PRAKTIKUM
+   ========================================================= */
+
+.bg-emerald-100 {
+  background: rgba(0, 255, 156, 0.10) !important;
+
+  color: #00ff9c !important;
+
+  border-color: rgba(0, 255, 156, 0.30) !important;
+}
+
+/* =========================================================
+   BADGE TEORI
+   ========================================================= */
+
+.bg-blue-100 {
+  background: rgba(22, 140, 255, 0.10) !important;
+
+  color: #4da3ff !important;
+
+  border-color: rgba(22, 140, 255, 0.30) !important;
+}
+
+/* =========================================================
+   GLOW ICON
+   ========================================================= */
+
+.text-emerald-600,
+.text-emerald-500 {
+  color: #00ff9c !important;
+
+  filter:
+    drop-shadow(
+      0 0 6px rgba(0, 255, 156, 0.55)
+    );
+}
+
+.text-indigo-600,
+.text-indigo-500 {
+  color: #a855f7 !important;
+
+  filter:
+    drop-shadow(
+      0 0 6px rgba(168, 85, 247, 0.55)
+    );
+}
+
+.text-blue-600,
+.text-blue-500 {
+  color: #168cff !important;
+
+  filter:
+    drop-shadow(
+      0 0 6px rgba(22, 140, 255, 0.55)
+    );
+}
+
+/* =========================================================
+   KARTU YANG BISA DIKLIK
+   ========================================================= */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-pointer:hover {
+  transform: translateY(-3px);
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050708;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263941;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00a86b;
+}
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+  background: rgba(0, 255, 156, 0.25);
+  color: white;
+}
+
+/* =========================================================
+   POPUP
+   ========================================================= */
+
+.fixed.inset-0 {
+  background: rgba(0, 0, 0, 0.78) !important;
+}
+
+.fixed.inset-0 > div {
+  background:
+    linear-gradient(
+      135deg,
+      #0a1014,
+      #0d1519
+    ) !important;
+
+  border-color: #263941 !important;
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.65),
+    0 0 35px rgba(168, 85, 247, 0.12);
+}
+
+/* =========================================================
+   SMOOTH ANIMATION
+   ========================================================= */
+
+* {
+  transition-property:
+    background-color,
+    border-color,
+    box-shadow,
+    transform,
+    color;
+  transition-duration: 180ms;
+  transition-timing-function: ease;
+}

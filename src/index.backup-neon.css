@@ -1,0 +1,54 @@
+﻿@import "tailwindcss";
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #18181b;
+}
+
+/* Background utama aplikasi */
+.min-h-screen {
+  background: #18181b;
+}
+
+/* Glow mengikuti warna blok */
+.bg-emerald-50 {
+  box-shadow:
+    0 8px 30px rgba(16, 185, 129, 0.20),
+    0 0 30px rgba(16, 185, 129, 0.18);
+}
+
+.bg-indigo-50 {
+  box-shadow:
+    0 8px 30px rgba(99, 102, 241, 0.20),
+    0 0 30px rgba(99, 102, 241, 0.18);
+}
+
+.bg-blue-50 {
+  box-shadow:
+    0 8px 30px rgba(59, 130, 246, 0.20),
+    0 0 30px rgba(59, 130, 246, 0.18);
+}
+
+/* Kartu jadwal */
+.rounded-2xl,
+.rounded-3xl {
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.30);
+}
+
+/* Kartu yang bisa diklik */
+.cursor-pointer:hover {
+  transform: translateY(-3px);
+}
+
+/* Header */
+header {
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.35);
+}
