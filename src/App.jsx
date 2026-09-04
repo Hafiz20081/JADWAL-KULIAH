@@ -149,8 +149,8 @@ const SCHEDULE_DATA = {
         id: "jum-1",
         name: "PEMETAAN DASAR",
         type: "Teori",
-        start: "13:55",
-        end: "15:40",
+        start: "13:00",
+        end: "14:44",
         room: "E 309",
         lecturer: "Ir. Een Lujainatul Isnaini",
         color: "from-rose-600 to-pink-700"
@@ -1131,7 +1131,7 @@ const nextCourse = useMemo(() => {
       })()}
       {/* Footer Sederhana */}
       <footer className="max-w-6xl mx-auto px-4 py-8 text-center text-xs text-slate-300 border-t border-zinc-700 dark:border-slate-800 mt-12">
-        <p>Jadwal Kuliah Semester 3 Ã¢â‚¬Â¢ Terintegrasi Pemantauan Waktu Real-Time</p>
+        <p>Jadwal Kuliah Semester 3 Terintegrasi Pemantauan Waktu Real-Time</p>
       </footer>
     </div>
   );
