@@ -150,7 +150,7 @@ const SCHEDULE_DATA = {
         name: "PEMETAAN DASAR",
         type: "Teori",
         start: "13:00",
-        end: "14:44",
+        end: "14:45",
         room: "E 309",
         lecturer: "Ir. Een Lujainatul Isnaini",
         color: "from-rose-600 to-pink-700"
